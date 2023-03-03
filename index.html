@@ -14,6 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="page-header">
@@ -31,7 +34,9 @@
             <li class="item">
               <a class="link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="item"><a class="link" href="">Contacts</a></li>
+            <li class="item">
+              <a class="link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="contacts-nav">
@@ -47,6 +52,82 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg width="32" height="22">
+            <use href="./images/sprite.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ---------------------MOBILE MENU------------------ -->
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-menu container">
+          <button type="button" class="menu-closed" data-menu-close>
+            <svg width="8" height="8">
+              <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <div class="menu-links">
+            <ul class="mob-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link current" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-contacts">
+            <ul class="mob-menu-contacts-list">
+              <li class="mob-menu-contacts-item">
+                <a class="mob-menu-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-menu-contacts-item">
+                <a class="mob-menu-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="soc-mobile-list">
+              <li class="soc-mobile-item">
+                <a href="" class="soc-mobile-link">
+                  <svg class="soc-mobile-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-mobile-item">
+                <a href="" class="soc-mobile-link">
+                  <svg class="soc-mobile-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-mobile-item">
+                <a href="" class="soc-mobile-link">
+                  <svg class="soc-mobile-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-mobile-item">
+                <a href="" class="soc-mobile-link">
+                  <svg class="soc-mobile-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -155,10 +236,12 @@
         </div>
       </section>
 
-      <!--Our team-->
+      <!------------------------Our team------------------------->
+
       <section class="team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
+
           <ul class="team-list">
             <li class="team-item">
               <img
@@ -170,7 +253,7 @@
               <div class="team-card">
                 <h3 class="team-heading">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
-                <!-- ul.soc-list>li.soc-item*4>a.soc-link -->
+
                 <ul class="soc-list">
                   <li class="soc-item">
                     <a href="" class="soc-link">
@@ -383,52 +466,55 @@
     </main>
     <!-- --------------------FOOTER------------------------- -->
     <footer class="page-footer">
-      <div class="container footer-address">
-        <div class="logo-text">
-          <a class="link" href="./index.html"
-            ><span class="footer-web"
-              >WEB<span class="footer-studio">STUDIO</span></span
-            >
-          </a>
-          <p class="footer-text">
-            Increase the flow of customers and <br />
-            sales for your business with digital <br />
-            marketing & growth solutions.
-          </p>
+      <div class="footer-address container">
+        <div class="footer-address-link">
+          <div class="logo-text">
+            <a class="link footer-link" href="./index.html"
+              ><span class="footer-web"
+                >WEB<span class="footer-studio">STUDIO</span></span
+              >
+            </a>
+            <p class="footer-text">
+              Increase the flow of customers and <br />
+              sales for your business with digital <br />
+              marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-soc">
+            <p class="footer-soc-text">Social media</p>
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-soc">
-          <p class="footer-soc-text">Social media</p>
-          <ul class="footer-soc-list">
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-soc-item">
-              <a class="footer-soc-link" href="">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscribe-box">
           <p class="footer-soc-text">Subscribe</p>
           <form class="subscribe-form">
@@ -510,12 +596,11 @@
             </label>
           </div>
           <button class="modal-btn" type="submit">Send</button>
-
-          <!-- <textarea name="Comment" cols="30"></textarea> -->
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

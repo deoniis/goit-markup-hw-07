@@ -4,6 +4,12 @@
     }
 
 }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        max-width: 480px;
+    }
+
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .container {
@@ -147,11 +153,11 @@
       color: var(--background-color);
 
       font-weight: 700;
-      font-size: 56px;
+      font-size: 52px;
       line-height: calc(60 / 56);
       text-align: center;
       letter-spacing: 0.02em;
-      width: 496px;
+      max-width: 496px;
 
       margin: 0 auto 40px;
 
@@ -170,6 +176,10 @@
  .feauters-item {
     max-width: calc((100% - 24px)/2);
  }
+ .feauters-title {
+    text-align: start;
+ }
+ 
 
 /* ---------------------------ACTIVE------------------------ */
  
@@ -200,33 +210,39 @@
             display: flex;
             flex-wrap: wrap;
             gap: 72px 24px;
-    
+            justify-content: center;
     
         }
     
         .customers-item {
-            display: inline-block;
-            width: calc((100% - 48px) / 3);
+            
+            width:168px;
             height: 88px;
+            
     
     
         }
     
-        .footer-address-link {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .footer-soc {
-            margin-left: 24px;
-        }
-    
-        .footer-text {
-            text-align: start;
-        }
+        
 /* -----------------FOOTER------------------- */
+.footer-address-link {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-soc {
+    margin-left: 24px;
+}
+
+.footer-text {
+    text-align: start;
+}
 .logo-text {
     margin: 0;
+}
+.footer-link {
+    display: block;
+    text-align: start;
 }
 .footer-address-link {
     margin-bottom: 72px;
@@ -254,7 +270,23 @@
     text-align: start;
 }
 
+/* ----------------------------MODAL--------------------------- */
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 408px;
+    height: 586px;
+    background-color: rgba(252, 252, 252, 1);
+
+    padding: 72px 24px 24px;
+
 }
+
+}
+
 
 
 

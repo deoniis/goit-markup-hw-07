@@ -177,6 +177,7 @@ img {
         position: absolute;
         top: 24px;
         right: 24px;
+        padding: 0;
     
         
         
@@ -264,6 +265,9 @@ img {
         justify-content: center;
         align-items: center;
 
+    }
+    .mob-current {
+        color: var(--color-iris);
     }
    
 
@@ -375,6 +379,11 @@ img {
     margin-bottom: 8px;
 
 }
+/* .feauters-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+} */
 
  .feauters-item {
     /* width: 100%; */
@@ -704,7 +713,7 @@ letter-spacing: 0.02em;
 /* ---------------FOOTER--------------- */
 
 .footer-address .container {
-    width: 100%;
+    width: 428px;
     padding: 0 15px;    
     margin: 0 auto;
 }
@@ -920,7 +929,7 @@ letter-spacing: 0.02em;
     width: 95%;
     max-width: 392px;
     max-height: 586px;
-    overflow: scroll;
+    /* overflow: scroll; */
 
 }
 

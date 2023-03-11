@@ -266,9 +266,11 @@ img {
         align-items: center;
 
     }
-    .mob-current {
+    
+    .mob-menu-link.mob-current {
         color: var(--color-iris);
     }
+    
    
 
  /* -------------section hero-------------- */

@@ -25,6 +25,9 @@
         flex-direction: column;
         gap: 72px;
     }
+    .logo-text {
+        width: 268px;
+    }
 
 }
 /* @media screen and (max-width: 428px) {

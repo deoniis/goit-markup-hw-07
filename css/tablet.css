@@ -195,7 +195,9 @@
         
     }
     .team-item {
-        max-width: calc((100% - 24px)/2)
+        max-width: calc((100% - 24px)/2);
+        margin-bottom: 0;
+        
     }
     .team-list {
         display: flex;
@@ -228,6 +230,7 @@
 .footer-address-link {
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .footer-soc {

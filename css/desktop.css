@@ -488,7 +488,8 @@
 }
 .footer-address {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
 
 }
 

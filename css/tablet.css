@@ -288,8 +288,40 @@
     overflow: scroll;
 
 }
+/* ----------------------PORTFOLIO---------------------- */
+
+.portfolio {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.buttons {
+
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.potfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+}
+.portfolio-item {
+    width: 356px;
 
 }
+.portfolio-item:not(:last-child) {
+    margin-bottom: 72px;
+
+}
+.portfolio-item:last-child {
+    justify-content: start;
+    
+}
+
+}
+
+
 
 
 

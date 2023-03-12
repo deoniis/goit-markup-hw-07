@@ -338,6 +338,9 @@
 
 
   }
+  .team-item {
+    margin-bottom: 0;
+  }
 
   .team-item:not(:last-child) {
       margin-right: 24px;
